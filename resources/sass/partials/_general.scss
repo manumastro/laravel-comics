@@ -1,0 +1,141 @@
+@import '~@fontsource/encode-sans-condensed/index.css';
+@import './partials/vars';
+
+body{
+  font-family: "Encode Sans Condensed", sans-serif;
+}
+
+header{
+  position: relative;
+  z-index: 999;
+  height: 125px;
+  background-color: white;
+  .row, .col{
+    height: 100%;
+  }
+  .col-left{
+    display: flex;
+    align-items: center;
+    img{
+      height: 80px;
+    }
+  }
+  .col-right{
+    nav{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      ul{
+        display: flex;
+        text-transform: uppercase;
+        list-style: none;
+        margin: auto;
+        a{
+          color: #464646;
+          text-decoration: none;
+          font-size: 13px;
+          font-weight: 600;
+          margin-right: 30px;
+        }
+        .active{
+          position: relative;
+          color: $primary-color;
+          &:before{
+            position: absolute;
+            content: '';
+            bottom: -53px;
+            right: 0;
+            width: 100%;
+            border-bottom: 5px solid $primary-color;
+          }
+        }
+        
+      }
+    }
+  }
+}
+
+
+
+footer{
+  .info-section{
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    .em-container{
+      display: flex;
+      &>div{
+        width: 50%;
+      }
+    }
+    .info{
+      display: flex;
+      ul{
+        padding: 40px 50px 50px 0;
+      }
+      li{
+        list-style: none;
+        line-height: 22px;
+        &.type{
+          color: white;
+          font-size: 20px;
+        }
+        a{
+          color: grey;
+          font-size: 13px;
+          font-weight: 500;
+          text-decoration: none;
+          transition: color 0.1s;
+          &:hover{
+            color: $primary-color;
+          }
+        }
+      }
+    }
+    .logo-bg{
+      position: relative;
+      img{
+        position: absolute;
+        top: -97px;
+        right: 0;
+        z-index: 1;
+      }
+    }
+  }
+  .signup-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 136px;
+    position: relative;
+    background-color: #303030;
+    z-index: 3;
+    .signup{
+      button{
+      color: whitesmoke;
+      font-weight: 500;
+      font-size: 18px;
+      background-color: #303030;
+      padding: 10px;
+      border-color: $primary-color;
+      transition: background-color 0.3s ease-in-out;
+      &:hover{
+        background-color: $primary-color;
+      }
+    }
+    }
+    .social{
+      span{
+        color: $primary-color;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      span, a{
+        margin-right: 20px;
+      }
+    }
+
+  }
+  
+}

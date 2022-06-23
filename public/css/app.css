@@ -1,0 +1,152 @@
+/* encode-sans-condensed-vietnamese-400-normal*/
+@font-face {
+  font-family: 'Encode Sans Condensed';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('./files/encode-sans-condensed-vietnamese-400-normal.woff2') format('woff2'), url('./files/encode-sans-condensed-all-400-normal.woff') format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* encode-sans-condensed-latin-ext-400-normal*/
+@font-face {
+  font-family: 'Encode Sans Condensed';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('./files/encode-sans-condensed-latin-ext-400-normal.woff2') format('woff2'), url('./files/encode-sans-condensed-all-400-normal.woff') format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* encode-sans-condensed-latin-400-normal*/
+@font-face {
+  font-family: 'Encode Sans Condensed';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('./files/encode-sans-condensed-latin-400-normal.woff2') format('woff2'), url('./files/encode-sans-condensed-all-400-normal.woff') format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+body {
+  font-family: "Encode Sans Condensed", sans-serif;
+}
+
+header {
+  position: relative;
+  z-index: 999;
+  height: 125px;
+  background-color: white;
+}
+header .row, header .col {
+  height: 100%;
+}
+header .col-left {
+  display: flex;
+  align-items: center;
+}
+header .col-left img {
+  height: 80px;
+}
+header .col-right nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+header .col-right nav ul {
+  display: flex;
+  text-transform: uppercase;
+  list-style: none;
+  margin: auto;
+}
+header .col-right nav ul a {
+  color: #464646;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  margin-right: 30px;
+}
+header .col-right nav ul .active {
+  position: relative;
+  color: #0282f9;
+}
+header .col-right nav ul .active:before {
+  position: absolute;
+  content: "";
+  bottom: -53px;
+  right: 0;
+  width: 100%;
+  border-bottom: 5px solid #0282f9;
+}
+
+footer .info-section {
+  background-image: url("../img/footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+footer .info-section .em-container {
+  display: flex;
+}
+footer .info-section .em-container > div {
+  width: 50%;
+}
+footer .info-section .info {
+  display: flex;
+}
+footer .info-section .info ul {
+  padding: 40px 50px 50px 0;
+}
+footer .info-section .info li {
+  list-style: none;
+  line-height: 22px;
+}
+footer .info-section .info li.type {
+  color: white;
+  font-size: 20px;
+}
+footer .info-section .info li a {
+  color: grey;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.1s;
+}
+footer .info-section .info li a:hover {
+  color: #0282f9;
+}
+footer .info-section .logo-bg {
+  position: relative;
+}
+footer .info-section .logo-bg img {
+  position: absolute;
+  top: -97px;
+  right: 0;
+  z-index: 1;
+}
+footer .signup-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 136px;
+  position: relative;
+  background-color: #303030;
+  z-index: 3;
+}
+footer .signup-social .signup button {
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #303030;
+  padding: 10px;
+  border-color: #0282f9;
+  transition: background-color 0.3s ease-in-out;
+}
+footer .signup-social .signup button:hover {
+  background-color: #0282f9;
+}
+footer .signup-social .social span {
+  color: #0282f9;
+  font-weight: 600;
+  font-size: 20px;
+}
+footer .signup-social .social span, footer .signup-social .social a {
+  margin-right: 20px;
+}
